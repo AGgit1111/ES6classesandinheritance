@@ -6,10 +6,11 @@
       prototype-based inheritance. */
 // Example:
 class Animal {
-    constructor(name) {
+    constructor(name) { // The constructor is automaticallly called when an Animal object is called.
         this.name = name;
     }
-    speak() {
+    speak() { // This is a regular method defined within the class, but is not automatically called.
+        // You call it on an instance of the Animal class when you need it.
         console.log(`${this.name} makes a noise.`);
     }
 }
